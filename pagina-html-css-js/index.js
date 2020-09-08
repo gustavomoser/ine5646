@@ -3,12 +3,14 @@ var doubts = [];
 
 function addHobbie() {
   const hobbie = document.getElementById("new-hobbie");
-  var newHobbie = {
-    nome: hobbie.value,
-  };
-  hobbies.push(newHobbie);
-  hobbie.value = "";
-  listarHobbies();
+  if (!!hobbie.value.trim()) {
+    var newHobbie = {
+      nome: hobbie.value,
+    };
+    hobbies.push(newHobbie);
+    hobbie.value = "";
+    listarHobbies();
+  }
 }
 
 function listarHobbies() {
@@ -28,12 +30,14 @@ function listarHobbies() {
 
 function addDoubt() {
   const doubt = document.getElementById("new-doubt");
-  var newDoubt = {
-    nome: doubt.value,
-  };
-  doubts.push(newDoubt);
-  doubt.value = "";
-  listDoubts();
+  if (!!doubt.value.trim()) {
+    var newDoubt = {
+      nome: doubt.value,
+    };
+    doubts.push(newDoubt);
+    doubt.value = "";
+    listDoubts();
+  }
 }
 
 function listDoubts() {
