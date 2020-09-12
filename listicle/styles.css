@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.headerContainer {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-height: 30rem;
+  margin-bottom: 1rem;
+}
+
+.headerContainer .bgImg {
+  width: 100%;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.headerContainer .mainImg {
+  min-width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headerContainer .profile {
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid white;
+  left: 72.5%;
+  top: 100%;
+  transform: translate(-72.5%, -100%);
+}
+
+.headerContainer .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  min-width: 30rem;
+}
+
+.headerContainer .title span {
+  font-size: 24pt;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.item-list {
+  width: 66.76%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-box {
+  width: 30rem;
+  height: 45rem;
+  border-radius: 2rem;
+  border: 1px solid gray;
+  padding: 25px 15px 10px 15px;
+  margin: 20px 10px;
+  justify-content: center;
+}
+
+.item-box h1 {
+  font-size: 24pt;
+}
+
+.item-box h3 {
+  font-size: 16pt;
+}
+
+.item-box img {
+  max-height: 25rem;
+  max-width: 25rem;
+  border-radius: 2rem;
+}
+
+@media (max-width: 1395px) {
+  .headerContainer .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    min-width: 30rem;
+  }
+
+  .headerContainer .title span {
+    font-size: 16pt;
+  }
+}
+
+@media (max-width: 950px) {
+  .headerContainer .title span {
+    font-size: 12pt;
+  }
+
+  .item-list {
+    display: flex;
+    columns: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerContainer {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    max-height: 20rem;
+  }
+
+  .headerContainer .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    min-width: 25rem;
+  }
+
+  .list {
+    display: flex;
+  }
+
+  .item-list {
+    width: 66.76%;
+    justify-content: space-around;
+  }
+
+  .item-box {
+    width: 20rem;
+    height: 35rem;
+    border-radius: 2rem;
+    border: 1px solid gray;
+    padding: 25px 15px 10px 15px;
+    margin: 20px 10px;
+  }
+
+  .item-box h1 {
+    font-size: 12pt;
+  }
+
+  .item-box h3 {
+    font-size: 8pt;
+  }
+
+  .item-box img {
+    max-height: 25rem;
+    max-width: 15rem;
+    border-radius: 2rem;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
