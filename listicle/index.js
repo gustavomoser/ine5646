@@ -70,22 +70,35 @@ var itens = [
   },
 ];
 
-function list() {
-  const list = document.getElementById("item-list");
-  for (let i = 0; i < itens.length; i++) {
-    const item = itens[i];
+class Item {
+  constructor(title, description, image) {
+    this.title = title;
+    this.description = description;
+    this.image = image;
+  }
+
+  getElement() {
     var title = document.createElement("h1");
-    title.innerHTML = item.title;
+    title.innerHTML = this.title;
     var desc = document.createElement("h3");
-    desc.innerHTML = item.description;
+    desc.innerHTML = this.description;
     var image = document.createElement("img");
-    image.setAttribute("src", item.image);
+    image.setAttribute("src", this.image);
     var div = document.createElement("div");
     div.setAttribute("class", "item-box");
     div.append(title);
     div.append(desc);
     div.append(image);
-    list.appendChild(div);
+    return div;
+  }
+}
+
+function list() {
+  const list = document.getElementById("item-list");
+  for (let i = 0; i < itens.length; i++) {
+    const item = itens[i];
+    const object = new Item(item.title, item.description, item.image);
+    list.appendChild(object.getElement());
   }
 }
 
