@@ -1,19 +1,79 @@
-.info-div {
-  margin-bottom: 2rem;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: darkgray;
+  margin: auto;
 }
 
-.profile-image {
-  vertical-align: middle;
+.main {
+  margin: 1rem auto;
+  border-radius: 5px;
+  background-color: gray;
+  text-align: center;
+  padding: 2rem 0rem 2rem 0rem;
+  text-shadow: 2px 2px #4E4E4E;
+  width: 70%;
 }
 
-.profile-image img {
+.main h2, h3 {
+  color: white
+}
+
+.content {
+  margin: 1rem auto ;
+  width: 70%;
+  border-radius: 5px;
+  background-color: gray;
+  padding-bottom: 2rem;
+}
+
+.content h2 {
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+.list {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.list .group div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid snow;
+  border-radius: 0.5rem;
+}
+
+.list .group div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+
+.list div a button {
   width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  box-shadow: 2px 2px 0.5px #888888;
-  transition: transform 1.7s cubic-bezier(0.6, 0, 0.6, 1);
 }
 
-.profile-image img:hover {
-  transform: rotate(360deg);
+@media (max-width: 1000px) {
+  .list .group div {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+  }
+
+  .content {
+    margin: auto;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .list .group div {
+    border: 1px solid gray;
+  }
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal page</title>
+    <meta lang="pt-br" charset="utf-8" />
+    <style>
+      body {
+        background-color: #ccd3ff;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>My personal page</h1>
+    <div>
+      <div class="info-div">
+        <h2>Who am I?</h2>
+        <p>My name is Gustavo, I'm a Computer Science student at UFSC.</p>
+        <p>
+          My hobbies are coding, play sports like basketball and soccer, and go
+          outside to camping and enjoy nature.
+        </p>
+        <div class="profile-image">
+          <img
+            src="https://avatars0.githubusercontent.com/u/26250588?s=460&v=4"
+            style="width: 10rem; height: 10rem"
+          />
+          <span style="margin-top: 0.5rem">This is me!</span>
+        </div>
+        <div style="margin-top: 2rem">
+          <img
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            style="width: 2rem; height: 2rem"
+          />
+          <span>Click</span>
+          <a href="http://github.com/gustavomoser"> here </a>
+          <span>to see my Github page.</span>
+        </div>
+        <div style="margin-top: 1rem">
+          <img
+            src="https://p7.hiclipart.com/preview/431/905/93/email-logo-bounce-address-computer-icons-message-email.jpg"
+            style="width: 2rem; height: 2rem"
+          />
+          <span>My e-mail: gustavo.moser@grad.ufsc.br</span>
+        </div>
+      </div>
+      <h2>Techs</h2>
+      <ul>
+        <li>React (Web and Native)</li>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>C</li>
+      </ul>
+    </div>
+    <div style="display: flex;">
+      <div>
+        <div style="margin-top: 1rem">
+          <h2>Add a hobbie</h2>
+          <input id="new-hobbie"></input>
+          <button type="button" onclick="addHobbie()">+ add hobbie</button>
+        </div>
+        <ul id="list-of-hobbies" />
+      </div>
+      <div style="margin-left: 2rem;">
+        <div style="margin-top: 1rem">
+          <h2>Add a doubt</h2>
+          <input id="new-doubt"></input>
+          <button type="button" onclick="addDoubt()">+ add doubt</button>
+        </div>
+        <ul id="list-of-doubts" />
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

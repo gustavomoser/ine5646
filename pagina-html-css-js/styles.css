@@ -1,0 +1,19 @@
+.info-div {
+  margin-bottom: 2rem;
+}
+
+.profile-image {
+  vertical-align: middle;
+}
+
+.profile-image img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  box-shadow: 2px 2px 0.5px #888888;
+  transition: transform 1.7s cubic-bezier(0.6, 0, 0.6, 1);
+}
+
+.profile-image img:hover {
+  transform: rotate(360deg);
+}
