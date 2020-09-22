@@ -1,11 +1,29 @@
+header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  text-align: end;
+  padding: 0.25rem;
+}
+
+header div {
+  vertical-align: middle;
+}
+
+header div a img {
+  margin-right: 1rem;
+  width: 2rem;
+}
+
 body {
+  margin: auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: darkgray;
-  margin: auto;
 }
 
 .main {
-  margin: 1rem auto;
+  margin: 4rem auto 2rem auto;
   border-radius: 5px;
   background-color: gray;
   text-align: center;
@@ -71,6 +89,10 @@ body {
     margin: auto;
     width: 100%;
     background-color: transparent;
+  }
+
+  .list .group h3 {
+    color: black;
   }
 
   .list .group div {
