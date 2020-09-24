@@ -32,7 +32,8 @@ body {
   width: 70%;
 }
 
-.main h2,
+.main > h1,
+h2,
 h3 {
   color: white;
 }
@@ -75,20 +76,26 @@ h3 {
   border-radius: 0.5rem;
   color: white;
   padding: 0.5rem;
+  transition: 0.2s;
+}
+
+.list div a button:hover {
+  color: black;
+  background-color: whitesmoke;
+  cursor: pointer;
 }
 
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  border-bottom: 1px dotted black;
 }
 
-/* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
-  color: #fff;
+  color: white;
   text-align: center;
   margin-top: 2px;
   border-radius: 6px;
@@ -98,6 +105,8 @@ h3 {
   top: 150%;
   left: 50%;
   margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .tooltip .tooltiptext::after {
@@ -105,15 +114,15 @@ h3 {
   position: absolute;
   bottom: 100%;
   left: 50%;
-  margin-left: 20px;
+  margin-left: 21px;
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent black transparent;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  opacity: 1;
 }
 
 @media (max-width: 1000px) {
