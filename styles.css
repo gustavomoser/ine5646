@@ -77,6 +77,10 @@ h3 {
   padding: 0.5rem;
 }
 
+.box {
+  padding: 1px;
+}
+
 @media (max-width: 1000px) {
   .list .group div {
     display: block;
