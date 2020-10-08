@@ -1,8 +1,8 @@
 var users = [
   {
-    nome: "gustavo",
-    user: "gustavo",
-    password: "123",
+    nome: "user",
+    user: "user",
+    password: "abc123",
   },
 ];
 
@@ -32,22 +32,30 @@ function validaLogin() {
 
   let logged = false;
 
-  for (item of users) {
-    if (item.user === login && item.password === pw) {
-      console.log("logou");
+  let index = undefined;
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].user === login && users[i].password === pw) {
+      index = i;
       logged = true;
       break;
     }
   }
   if (logged) {
     alert("sucesso! seja bem vindo");
-    showContent();
+    showContent(index);
   } else {
     alert("login/senha inválidos!");
   }
 }
 
-function showContent() {
+function showContent(index) {
+  const nome = users[index].nome;
+  const logincontent = document.getElementById("login-area");
+  logincontent.innerHTML = "";
+  const welcome = document.createElement("p");
+  welcome.innerHTML = `Bem vindo, ${nome.bold()}!`;
+  logincontent.appendChild(welcome);
+
   const page = document.getElementById("content-area");
   page.innerHTML = "";
   for (item of posts) {
