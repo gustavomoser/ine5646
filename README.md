@@ -1,3 +1,3 @@
-# INE5646 - Programação para web
+# INE5646 - Web Programming
 
-* [Árvore de atividades](https://gustavomoser.github.io/ine5646/)
+* [activities list](https://gustavomoser.github.io/ine5646/)
