@@ -1,3 +1,3 @@
 # UFSC - INE5646 - Web Programming
 
-Some web programming [activities](https://gustavomoser.github.io/ine5646/)
+Some web programming [activities](https://gustavomoser.github.io/web-programming/)
